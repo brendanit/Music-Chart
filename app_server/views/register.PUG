@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+  .row
+    .col-12.col-md-8
+      form(action="/location", method="get", role="form")
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="name") Name
+          .col-12.col-sm-10
+            input#name.form-control(name="name")
+
+        .form-group.row
+            label.col-10.col-sm-2.col-form-label(for="address") Address
+            .col-12.col-sm-10
+             input#name.form-control(address="address")
+
+        .form-group.row
+            label.col-10.col-sm-2.col-form-label(for="county") County
+            .col-12.col-sm-10
+             input#name.form-control(county="county")     
+        
+        .form-group.row
+            label.col-10.col-sm-2.col-form-label(for="telephone") Telephone
+            .col-12.col-sm-10
+             input#name.form-control(telephone="telephone")
+
+        .form-group.row
+            label.col-10.col-sm-2.col-form-label(for="email") Email
+            .col-12.col-sm-10
+             input#name.form-control(email="email")     
+
+
+
+
+
+            label.col-sm-2.col-form-label(for="register") Register
+             .col-sm-10
+            textarea#review.form-control(name="register", rows="5")
+        button.btn.btn-primary.float-right Register
+    .col-12.col-md-4
